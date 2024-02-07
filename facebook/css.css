@@ -1,0 +1,277 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: #f2f4f7;
+}
+
+.контент {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.гибкий-див {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.содержимое-названия {
+  margin-right: 70px; 
+}
+
+.содержимое-названия .логотип {
+  width: 150px;
+}
+
+.содержимое-названия p {
+  font-size: 20px;
+  margin-bottom: 50px; 
+}
+.контент .down p {
+    font-size: 12px;
+    margin-top: 20px;
+    margin-left: 400px;
+    text-align:center;
+  }
+
+form {
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  padding: 20px; 
+  width: 530px;
+  height: fit-content;
+  border-radius: 5px; 
+  box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+}
+
+form input {
+  outline: none;
+  padding: 10px; 
+  margin-bottom: 10px; 
+  font-size: 17px;
+}
+
+form input:focus {
+  border: 1.8px solid #316FF6;
+}
+
+form .вход {
+  outline: none;
+  border: none;
+  background: #316FF6;
+  padding: 10px;
+  border-radius: 4px;
+  font-size: 17px;
+  color: #fff;
+}
+
+form .вход:hover {
+  background: #316FF6;
+  cursor: pointer;
+}
+
+form a {
+  text-decoration: none;
+  text-align: center;
+  font-size: 16px;
+  padding-top: 10px;
+  color: #316FF6;
+}
+
+form hr {
+  background: #f7f7f7;
+  margin: 16px; 
+}
+
+form .создать-аккаунт {
+  outline: none;
+  border: none;
+  background: #06b909;
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-size: 16px;
+  color: #fff;
+  width: 50%;
+  margin: 0 auto;
+}
+
+form .создать-аккаунт:hover {
+  background: #03ad06;
+  cursor: pointer;
+}
+
+@media (max-width: 500px) {
+  html {
+    font-size: 60%;
+  }
+
+  .содержимое-названия {
+    margin: 0;
+    text-align: center;
+  }
+
+  form {
+    width: 300px;
+    height: fit-content;
+  }
+
+  form input {
+    margin-bottom: 16px;
+    font-size: 24px;
+  }
+
+  form .вход {
+    font-size: 24px;
+  }
+
+  form a {
+    font-size: 24px;
+  }
+
+  form .создать-аккаунт {
+    font-size: 24px;
+  }
+
+  .гибкий-див {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 501px) and (max-width: 768px) {
+  html {
+    font-size: 60%;
+  }
+
+  .содержимое-названия {
+    margin: 0;
+    text-align: center;
+  }
+
+  form {
+    width: 300px;
+    height: fit-content;
+  }
+
+  form input {
+    margin-bottom: 16px;
+    font-size: 24px;
+  }
+
+  form .вход {
+    font-size: 24px;
+  }
+
+  form a {
+    font-size: 24px;
+  }
+
+  form .создать-аккаунт {
+    font-size: 24px;
+  }
+
+  .гибкий-див {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1200px) {
+  html {
+    font-size: 60%;
+  }
+
+  .содержимое-названия {
+    margin: 0;
+    text-align: center;
+  }
+
+  form {
+    width: 300px;
+    height: fit-content;
+  }
+
+  form input {
+    margin-bottom: 16px;
+    font-size: 24px;
+  }
+
+  form .вход {
+    font-size: 24px;
+  }
+
+  form a {
+    font-size: 24px;
+  }
+
+  form .создать-аккаунт {
+    font-size: 24px;
+  }
+
+  .гибкий-див {
+    display: flex;
+    flex-direction: column;
+  }
+
+  @media (orientation: landscape) and (max-height: 500px) {
+    .header {
+      height: 90vmax;
+    }
+  }  
+}
+.футер-контент {
+    position: relative;
+    max-width: 1000px;
+    margin: 50px 0;
+}
+
+footer ol {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    padding: 10px 0;
+}
+
+footer ol:first-child {
+    border-bottom: 1px solid #dddfe2;
+}
+
+footer ol:first-child li:last-child button {
+    background-color: #f5f6f7;
+    border: 1px solid #ccd0d5;
+    outline: none;
+    color: #4b4f56;
+    padding: 0 8px;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+footer ol li {
+    padding-right: 15px;
+    font-size: 12px;
+    color: #385898;
+}
+
+footer ol li a {
+    text-decoration: none;
+    color: #385898;
+}
+
+footer ol li a:hover {
+    text-decoration: underline;
+}
+
+footer small {
+    font-size: 11px;
+}
+
